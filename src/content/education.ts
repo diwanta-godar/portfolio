@@ -2,6 +2,16 @@ import type { EducationItem } from '@/content/types'
 
 export const education: EducationItem[] = [
   {
+    id: 'mern-stack-training',
+    degree: 'MERN Stack Training',
+    institution: 'Broadway Infosys',
+    period: 'Aug 31 - Dec 1, 2025',
+    description:
+      'Completed 135 hours of professional MERN Stack training at Broadway Infosys. Certificate issued Jan 11, 2026.',
+    highlights: ['Certificate of Achievement, No. B96971000'],
+    certificateImage: '/projects/mern-certificate.png',
+  },
+  {
     id: 'bca',
     degree: 'Bachelors in Computer Application (BCA)',
     institution: 'Asian College of Higher Studies (ACHS)',
@@ -31,8 +41,7 @@ export const education: EducationItem[] = [
     degree: 'Schooling (SEE)',
     institution: 'Little Angels’ School',
     period: 'Completed',
-    description:
-      'Primary through secondary schooling completed with excellent academic standing.',
+    description: 'Primary through secondary schooling completed with excellent academic standing.',
     highlights: [
       'Graduated with distinctions in science and mathematics',
       'Developed early passion for computers, programming, and web technology',

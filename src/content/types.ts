@@ -39,6 +39,7 @@ export type EducationItem = {
   period: string
   description?: string
   highlights?: string[]
+  certificateImage?: string
 }
 
 export type ExperienceItem = {

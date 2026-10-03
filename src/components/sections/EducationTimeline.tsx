@@ -25,9 +25,7 @@ export function EducationTimeline({ items }: EducationTimelineProps) {
                 {item.period}
               </span>
             </div>
-            <p className="mt-1.5 font-medium text-primary text-base">
-              {item.institution}
-            </p>
+            <p className="mt-1.5 font-medium text-primary text-base">{item.institution}</p>
             {item.description && (
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 {item.description}
@@ -39,6 +37,22 @@ export function EducationTimeline({ items }: EducationTimelineProps) {
                   <li key={point}>{point}</li>
                 ))}
               </ul>
+            )}
+            {item.certificateImage && (
+              <a
+                href={item.certificateImage}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-5 block overflow-hidden rounded-lg border border-border"
+                aria-label={`Open certificate for ${item.degree}`}
+              >
+                <img
+                  src={item.certificateImage}
+                  alt={`Certificate for ${item.degree} from ${item.institution}`}
+                  loading="lazy"
+                  className="h-auto w-full"
+                />
+              </a>
             )}
           </div>
         </li>
